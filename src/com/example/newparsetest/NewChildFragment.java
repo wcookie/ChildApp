@@ -102,6 +102,7 @@ public class NewChildFragment extends Fragment {
 			child.setHometown (editHometown);
 			child.setAge(convert);
 			child.setTextKey(TextKey);
+			child.setSecondAge(editAge);
 				child.saveInBackground(new SaveCallback() {
 
 					@Override

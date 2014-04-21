@@ -52,7 +52,7 @@ public class SearchView extends Activity{
 			        TextView home=(TextView) view.findViewById(R.id.dahometowns);
 			        home.setText(list.getHometown());
 			        TextView age=(TextView) view.findViewById(R.id.daages);
-			        age.setText(list.getAge());
+			        age.setText(list.getSecondAge());
 			        ParseObject photo = list.getParseObject("photo");
 			          ParseImageView imageView  = (ParseImageView) view.findViewById(R.id.imageView);
 			          imageView.setParseFile((ParseFile) list.getPhotoFile());

@@ -63,6 +63,7 @@ String TextKey;
 	sub.setLastName (editLastName);
 	sub.setHometown (editHometown);
 	sub.setAge(convert);
+	sub.setSecondAge(editAge);
 	sub.setTextKey(TextKey);
 	sub.saveInBackground ();
 	Intent openHub= new Intent(newChild.this, hub.class);

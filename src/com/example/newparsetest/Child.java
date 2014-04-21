@@ -25,6 +25,14 @@ public class Child extends ParseObject {
 		put ("lastName", lastName);
 	}
 	
+	public String getSecondAge () {
+		return getString ("ageTwo");
+	}
+	
+	public void setSecondAge (String ageTwo) {
+		put ("ageTwo", ageTwo);
+	}
+	
 	public String getHometown () {
 		return getString ("hometown");
 	}
