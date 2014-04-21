@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/nNew"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+       	android:layout_gravity="center"
+  		android:layout_marginTop="25dp"
+        android:onClick="NewChild"
+        android:text="@string/nNew"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/nView"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:onClick="ViewChild"
+        android:text="@string/nView"
+        android:textSize="20sp" />
+      
+      <Button
+        android:id="@+id/nAbout"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        android:onClick="AboutApp"
+        android:text="@string/nAbout"
+        android:textSize="20sp" />
+      <Button
+        android:id="@+id/nSearch"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:onClick="SearchApp"
+        android:text="@string/nSearch"
+        android:textSize="20sp" />
+
+   </LinearLayout>

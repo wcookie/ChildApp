@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@id/nSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:gravity="center"
+        android:text="Fill the parameters you want to search" />
+
+    <EditText
+        android:id="@+id/sFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+       android:layout_below="@id/nSearch"
+        android:hint="@string/nFirstName"
+        android:inputType="textCapWords|textNoSuggestions"
+        android:maxLines="1"
+        android:singleLine="true"/>  
+       
+        <EditText
+        android:id="@+id/sLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/sFirstName"
+        android:hint="@string/nLastName"
+        android:inputType="textCapWords|textNoSuggestions"
+        android:maxLines="1"
+        android:singleLine="true"/>  
+          
+        <EditText
+        android:id="@+id/sHometown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/sLastName"
+        android:hint="@string/nHometown"
+        android:inputType="textCapWords|textNoSuggestions"
+        android:maxLines="1"
+        android:singleLine="true"/>  
+        
+        <EditText
+        android:id="@+id/sAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/sHometown"
+        android:hint="@string/nAge"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:singleLine="true"/>  
+
+        <Button
+            android:id="@+id/nNewSearch"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sAge"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:onClick="ButtonOnClick"
+            android:text="@string/nNewSearch"
+            android:textSize="20sp" />
+
+</LinearLayout>

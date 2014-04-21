@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.newparsetest"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+      <uses-permission android:name="android.permission.CAMERA" />
+
+   
+    
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:name="com.example.newparsetest.ChildApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".newChild"
+            android:label="@string/app_name" >
+            <intent-filter>
+               
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewChild"
+            android:label="@string/app_name" >
+            <intent-filter>
+               
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".NewChildActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+               
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".About"
+            android:label="@string/app_name" >
+            <intent-filter>
+               
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SearchClass"
+            android:label="@string/app_name" >
+            <intent-filter>
+               
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+              <activity
+            android:name=".SearchView"
+            android:label="@string/app_name" >
+            <intent-filter>
+               
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       <activity
+            android:label="@string/app_name"
+            android:name=".hub" >
+            <intent-filter >
+               <action android:name=".hub" />
+ <action android:name="com.example.newparsetest.hub" />
+   				<action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         
+    </application>
+
+</manifest>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <EditText
+        android:id="@+id/nFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="25dp"
+        android:hint="@string/nFirstName"
+        android:inputType="textCapWords|textNoSuggestions"
+        android:maxLines="1"
+        android:singleLine="true"/>  
+       
+        <EditText
+        android:id="@+id/nLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/nFirstName"
+        android:hint="@string/nLastName"
+        android:inputType="textCapWords|textNoSuggestions"
+        android:maxLines="1"
+        android:singleLine="true"/>  
+          
+        <EditText
+        android:id="@+id/nHometown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/nLastName"
+        android:hint="@string/nHometown"
+        android:inputType="textCapWords|textNoSuggestions"
+        android:maxLines="1"
+        android:singleLine="true"/>  
+        
+        <EditText
+        android:id="@+id/nAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/nHometown"
+        android:hint="@string/nAge"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:singleLine="true"/>  
+        
+       
+
+       	<Button
+       	    android:id="@+id/nAdd"
+       	    android:layout_width="250sp"
+       	    android:layout_height="wrap_content"
+       	    android:layout_below="@+id/nAge"
+       	    android:layout_centerHorizontal="true"
+       	    android:text="@string/nAdd"
+       	    android:textSize="20sp"
+       	    android:onClick="ButtonOnClick"
+       	     />
+      
+       	
+</RelativeLayout>
+
+</ScrollView>

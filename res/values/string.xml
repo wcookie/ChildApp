@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nFirstName">&quot;First Name&quot;</string>
+    <string name="nLastName">&quot;Last Name&quot;</string>
+    <string name="nHometown">&quot;Hometown&quot;</string>
+    <string name="nAge">&quot;Age&quot;</string>
+    <string name="nAdd">&quot;Add Child&quot;</string>
+    <string name="nNew">&quot;Add a New Child&quot;</string>
+    <string name="nView">&quot;View Children &quot;</string>
+    <string name="nAbout">&quot;About Application&quot;</string>
+    <string name="nSwitch">&quot;Switch to Front&quot;</string>
+    <string name="nSearch">&quot;Search&quot;</string>
+    <string name="nNewSearch">&quot;New Search&quot;</string>
+    
+</resources>
