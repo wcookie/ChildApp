@@ -10,18 +10,30 @@ import android.view.View;
 
 public class SearchClass extends Activity {
 	public static String searchFirstName;
-	String searchLastName;
-	String searchHometown;
+	public static String searchLastName;
+	public static String searchHometown;
 	String searchAge;
 	Button bSearch;
 	EditText sfirstName;
 	EditText slastName;
 	EditText shometown;
 	EditText sage;
-	int convert=9000;
+	public static int convert=9000;
 	public static String getFirst()
 	{return searchFirstName;}
-	
+	public static String getLast()
+	{return searchLastName;}
+	public static String getHometown()
+	{return searchHometown;}
+	public static int getAge()
+	{
+		if (convert!=9000){
+		return convert;
+		}
+		else{
+			return 0;
+		}
+		}
 		@Override
 	public void onCreate (Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

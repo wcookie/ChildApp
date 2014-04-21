@@ -12,24 +12,24 @@ import com.parse.ParseObject;
 
 import com.parse.ParseQueryAdapter;
 import android.widget.TextView;
-public class ViewChild extends ListActivity{
+public class ViewChild extends Activity{
 	
-	private ParseQueryAdapter<Child> mainAdapter;
+	//private ParseQueryAdapter<Child> mainAdapter;
 
 	
 	@Override
 	public void onCreate (Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		// initialize ParseQueryAdapater]
-
-	ListView listView;	
-		mainAdapter=new ParseQueryAdapter<Child>(this, Child.class);
+		  setContentView(R.layout.viewview);
+		 ListView listView = (ListView) findViewById(R.id.lisp);	
+		  ParseQueryAdapter<Child> mainAdapter=new ParseQueryAdapter<Child>(this, "Child");
 		
 	//what to say
 		mainAdapter.setTextKey("TextKey");
 		mainAdapter.setImageKey("photo");
 		
-	setListAdapter(mainAdapter);
+	listView.setAdapter(mainAdapter);
 	//=mainAdapter.setBackgroundDrawable(R.drawable.bg_card);
 		
 

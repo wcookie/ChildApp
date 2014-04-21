@@ -32,10 +32,14 @@ public class SearchView extends ListActivity{
 		public ParseQuery<Child> create() {
 		      // Here we can configure a ParseQuery to our heart's desire.
 		      ParseQuery query = new ParseQuery("Child");
-		      query.whereEqualTo("firstName", SearchClass.getFirst());
-		 
+		      query.whereStartsWith("firstName", SearchClass.getFirst());
+		      query.setCachePolicy(ParseQuery.CachePolicy.NETWORK_ELSE_CACHE);
+		      query.whereStartsWith("lastName", SearchClass.getLast());
+		     query.whereEqualTo("age", SearchClass.getAge());
+		     query.whereStartsWith("hometown", SearchClass.getHometown());
 		      return query;
 		    }
+		
 				  });
 	//what to say
 		adapter.setTextKey("TextKey");
