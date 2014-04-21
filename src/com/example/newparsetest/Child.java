@@ -2,6 +2,7 @@ package com.example.newparsetest;
 import com.parse.ParseFile;
 import com.parse.ParseObject;
 import com.parse.ParseClassName;
+import com.parse.ParseQuery;
 @ParseClassName ("Child")
 public class Child extends ParseObject {
 	public Child () {
@@ -52,5 +53,7 @@ public class Child extends ParseObject {
 	public void setPhotoFile(ParseFile file) {
 		put("photo", file);
 	}
-	
+	public static ParseQuery<Child> getQuery(){
+		return ParseQuery.getQuery(Child.class);
+	}
 }

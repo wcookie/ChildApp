@@ -22,20 +22,25 @@ public final class R {
     }
     public static final class drawable {
         public static final int bg_card=0x7f020000;
-        public static final int ic_action_photo=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
+        public static final int bg_pressed=0x7f020001;
+        public static final int ic_action_photo=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int list_decider=0x7f020004;
     }
     public static final class id {
-        public static final int action_settings=0x7f080019;
+        public static final int LinearLayout1=0x7f080014;
+        public static final int action_settings=0x7f08001c;
         public static final int camera_photo_button=0x7f080007;
         public static final int camera_preview=0x7f080005;
         public static final int camera_surface_view=0x7f080006;
-        public static final int child_preview_image=0x7f080012;
-        public static final int danames=0x7f080010;
+        public static final int child_preview_image=0x7f080013;
+        public static final int daages=0x7f080010;
+        public static final int dahometowns=0x7f08000f;
+        public static final int danames=0x7f08000e;
         public static final int fragmentContainer=0x7f080009;
-        public static final int icon=0x7f08000f;
-        public static final int label=0x7f080018;
-        public static final int listerine=0x7f08000e;
+        public static final int imageView=0x7f080011;
+        public static final int lisp=0x7f08001b;
+        public static final int listView=0x7f080015;
         public static final int nAbout=0x7f08000c;
         public static final int nAdd=0x7f080004;
         public static final int nAge=0x7f080003;
@@ -43,15 +48,15 @@ public final class R {
         public static final int nHometown=0x7f080002;
         public static final int nLastName=0x7f080001;
         public static final int nNew=0x7f08000a;
-        public static final int nNewSearch=0x7f080017;
+        public static final int nNewSearch=0x7f08001a;
         public static final int nSearch=0x7f08000d;
         public static final int nSwitch=0x7f080008;
         public static final int nView=0x7f08000b;
-        public static final int photo_button=0x7f080011;
-        public static final int sAge=0x7f080016;
-        public static final int sFirstName=0x7f080013;
-        public static final int sHometown=0x7f080015;
-        public static final int sLastName=0x7f080014;
+        public static final int photo_button=0x7f080012;
+        public static final int sAge=0x7f080019;
+        public static final int sFirstName=0x7f080016;
+        public static final int sHometown=0x7f080018;
+        public static final int sLastName=0x7f080017;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -65,7 +70,8 @@ public final class R {
         public static final int searchlist=0x7f030008;
         public static final int searchview=0x7f030009;
         public static final int test=0x7f03000a;
-        public static final int viewview=0x7f03000b;
+        public static final int testmenu=0x7f03000b;
+        public static final int viewview=0x7f03000c;
     }
     public static final class menu {
         public static final int main=0x7f070000;
