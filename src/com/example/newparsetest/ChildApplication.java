@@ -12,6 +12,6 @@ public class ChildApplication extends Application {
 	    super.onCreate();
 	 
 	    ParseObject.registerSubclass(Child.class);
-	    Parse.initialize(this, "NFqc3lRMDtpmtb2yfI0s6L3ZImOTOzLPaQgcyPdt", "XyBjH50RmRnFfAYxsOxVKwdanLwlc3TZW4AKazcW");
+	    Parse.initialize(this, KEYS HERE);
 	    	  }
 }
